@@ -1,0 +1,100 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://m365search.blob.core.windows.net/images/contracts-icon.png",
+                            "size": "Medium",
+                            "horizontalAlignment": "Center",
+                            "altText": "session logo"
+                        }
+                    ],
+                    "height": "stretch"
+                },
+                {
+                    "type": "Column",
+                    "width": 8,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "[${Name}](${BlobSASUri})",
+                            "color": "Accent",
+                            "size": "Large",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Url: **${Url}**",
+                            "spacing": "Small",
+                            "size": "Medium",
+                            "weight": "Bolder",
+                            "$when": ""
+                        },                        
+                        {
+                            "type": "TextBlock",
+                            "text": "Last Modified Date: {{DATE(${LastModifiedDateTime})}}",
+                            "spacing": "Small",
+                            "weight": "Bolder",
+                            "$when": ""
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Last Modified: {{DATE(${LastModified})}}",
+                            "spacing": "Small",
+                            "weight": "Bolder",
+                            "$when": ""
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "FileType: ${FileType}",
+                            "spacing": "Small",
+                            "$when": ""
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "ContentType: ${ContentType}",
+                            "spacing": "Small",
+                            "$when": ""
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "ContentPreview: ${ContentPreview}",
+                            "spacing": "Small",
+                            "$when": ""
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "IconUrl: ${IconUrl}",
+                            "spacing": "Small",
+                            "$when": ""
+                        }
+                    ],
+                    "horizontalAlignment": "Center",
+                    "spacing": "Medium"
+                },
+                {
+                    "type": "Column",
+                    "width": 2,
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://m365search.blob.core.windows.net/images/contracts-icon2.png",
+                            "altText": "Result logo",
+                            "size": "Medium",
+                            "horizontalAlignment": "Right"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
