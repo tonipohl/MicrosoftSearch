@@ -22,5 +22,7 @@ The following list of links will help you to get more information about Microsof
 - SPFx sample: https://github.com/microsoft-search/spfx-samples/tree/master/Sample1.0
 - Microsoft Search in SharePoint and Office 365: https://www.youtube.com/watch?v=6upqwbhHoJM 
 - Bringing external data into Microsoft 365 - custom search result types and verticals Chris O´Brien: https://www.sharepointnutsandbolts.com/2021/09/Microsoft-365-custom-search-vertical-result-type.html?m=0 
+- Licensing and pricing https://docs.microsoft.com/en-us/microsoftsearch/licensing 
+- Microsoft Graph Postman Collections https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c?ctx=documentation 
 
-More to follow...
+Find more information in the [presentations](./presentations) directory.
