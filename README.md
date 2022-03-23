@@ -24,6 +24,5 @@ The following list of links will help you to get more information about Microsof
 - Bringing external data into Microsoft 365 - custom search result types and verticals Chris O´Brien: https://www.sharepointnutsandbolts.com/2021/09/Microsoft-365-custom-search-vertical-result-type.html?m=0 
 - Licensing and pricing https://docs.microsoft.com/en-us/microsoftsearch/licensing 
 - Microsoft Graph Postman Collections https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148c?ctx=documentation 
-- Find more links in the presentation directory
 
-Find more information in the [presentations](./presentations) directory.
+Find more information in the slides in the [presentations](./presentations) directory.

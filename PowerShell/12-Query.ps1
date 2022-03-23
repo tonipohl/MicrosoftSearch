@@ -38,7 +38,7 @@ $body = @"
   "requests": [
     {
       "entityTypes": [ "driveItem" ],
-      "query": { "queryString": "contoso" }
+      "query": { "queryString": "vespa" }
     }
   ]
 }
@@ -59,3 +59,5 @@ $Result.value
 $result.value.hitsContainers
 
 $result.value.hitsContainers[0].hits
+
+# end.
