@@ -11,7 +11,8 @@ Write-Output $now
 
 # In real world, use a GUID as Id. This here is just to simplify the Id to make it more readable.
 # $itemid = New-Guid
-$itemid = Get-Date -Format "HHmmss"
+# $itemid = Get-Date -Format "HHmmss"
+$itemid = "100"
 Write-Output $itemid
 
 $body = @"

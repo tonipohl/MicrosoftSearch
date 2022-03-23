@@ -1,5 +1,5 @@
 #-------------------------------------------
-# 11-Query.ps1
+# 12-Query.ps1
 # Important: Works only with user auth!
 #-------------------------------------------
 # Query Microsoft Search
@@ -16,6 +16,23 @@ Mail.Read
 Sites.Read.All
 #>
 
+# https://docs.microsoft.com/en-us/graph/search-concept-messages#example-1-search-messages-in-a-users-mailbox
+<#
+$body = @"
+{
+  "requests": [
+    {
+      "entityTypes": [ "message" ],
+      "query": { "queryString": "vespa" },
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+"@
+#>
+
+# search documents
 $body = @"
 {
   "requests": [
@@ -37,3 +54,8 @@ $Result = Invoke-RestMethod `
   -ErrorAction Stop
 
 $Result.value
+
+# See the search result details
+$result.value.hitsContainers
+
+$result.value.hitsContainers[0].hits
